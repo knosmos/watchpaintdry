@@ -1,14 +1,16 @@
 html,body{
-    height:100%;
     padding:0;
     margin:0;
     overflow:hidden;
-    width:100%;
 }
-body{
+html{
     background-image:url("paint.jpg");
     background-repeat: no-repeat;
     background-size:cover;
+    width:100%;
+    height:100%;
+}
+body{
     padding:30px;
 }
 h1{
@@ -18,6 +20,7 @@ h1{
     font-weight:400;
     margin:0px;
     margin-top:-20px;
+    display:inline-block;
 }
 h3{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -25,6 +28,7 @@ h3{
     letter-spacing: -0.03em;
     font-weight:400;
     margin:0px;
+    display:inline-block;
 }
 #time{
     font-weight:600;
@@ -32,7 +36,7 @@ h3{
 }
 #credit{
     display:inline-block;
-    position:absolute;
+    position:fixed;
     bottom:30px;
     background-color:rgba(0, 0, 0, 0.473);
     padding:5px;
