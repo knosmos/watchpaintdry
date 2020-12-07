@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-<html> 
+<html>
     <head>
         <title>WatchPaintDry</title>
         <link rel=stylesheet href=style.css>
         <link rel=icon href=icon.png>
     </head>
     <body>
-        <h1>watch<span style="font-weight:600;">paint</span>dry</h1>
-        <hr>
-        <h3>the world's finest time-wasting tool</h3>
-        <h3 id=time></h3>
+        <div id=overlay></div>
+        <div id=container>
+            <h1>watch<span style="font-weight:600;">paint</span>dry</h1>
+            <hr>
+            <h3>the world's finest time-wasting tool</h3>
+            <br>
+            <h3 id=time></h3>
+            <br>
+            <h3 id=credit>made by Jieruei Chang</h3>            
+        </div>
         <script>
             let t = 0;
             function update(){
@@ -21,7 +27,6 @@
                 document.getElementById("time").innerHTML = `${t} ${post}`;
             }
             setInterval(update,1000);
-        </script>
-        <h3 id=credit>made by Jieruei Chang</h3>
+        </script>        
     </body>
 </html>
